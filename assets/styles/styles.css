@@ -1,0 +1,153 @@
+/* Base Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Accent Colors */
+:root {
+    --primary-accent: rgb(0, 112, 74);
+    --text-color-light: #fff;
+    --background-light: #f9f9f9;
+    --border-color: #ddd;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-accent);
+    padding: 1rem 2rem;
+    color: var(--text-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    flex: 1;
+}
+
+h2 {
+    color: var(--primary-accent);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Card Styles */
+.permit-options,
+.ticket-list,
+.history-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.permit-card,
+.ticket-card,
+.history-card {
+    background-color: var(--background-light);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1 1 calc(33.333% - 1.5rem);
+    min-width: 250px;
+    max-width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.permit-card:hover,
+.ticket-card:hover,
+.history-card:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.permit-card h3,
+.ticket-card h3,
+.history-card h3 {
+    color: var(--primary-accent);
+    margin-bottom: 0.5rem;
+}
+
+button {
+    background-color: var(--primary-accent);
+    color: var(--text-color-light);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: rgba(0, 112, 74, 0.8);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .permit-options,
+    .ticket-list,
+    .history-list {
+        flex-direction: column;
+    }
+
+    .permit-card,
+    .ticket-card,
+    .history-card {
+        flex: 1 1 100%;
+    }
+}

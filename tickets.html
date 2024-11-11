@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Parking Fines</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>GGC Parking Portal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="permits.html">Permits</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="account_history.html">Account History</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Pay Parking Fines</h2>
+        <p>Review and pay any outstanding parking fines associated with your account.</p>
+
+        <div class="ticket-list">
+            <!-- Example Ticket 1 -->
+            <div class="ticket-card">
+                <h3>Ticket #12345</h3>
+                <p>Date: 2024-09-15</p>
+                <p>Violation: Parking in a restricted zone</p>
+                <p>Fine: $50</p>
+                <button onclick="payFine('12345')">Pay Fine</button>
+            </div>
+            <!-- Example Ticket 2 -->
+            <div class="ticket-card">
+                <h3>Ticket #67890</h3>
+                <p>Date: 2024-10-02</p>
+                <p>Violation: Expired parking permit</p>
+                <p>Fine: $30</p>
+                <button onclick="payFine('67890')">Pay Fine</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GGC Parking Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/scripts/scripts.js"></script>
+</body>
+</html>
