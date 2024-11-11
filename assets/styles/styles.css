@@ -54,7 +54,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.2);
 }
 
 /* Main Content */
@@ -71,6 +71,68 @@ h2 {
 p {
     margin-bottom: 1rem;
 }
+.container-fluid {
+    padding: 0;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.user-info h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.map-section img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info h5 {
+    font-weight: bold;
+}
+
+/* Top Navbar Links */
+.top-nav a {
+    margin-right: 20px;
+    color: #000;
+    font-weight: 500;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 0.5rem;
+    border: 14px solid var(--border-color);
+    border-radius: 4px;
+    width: 100%;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-accent);
+    color: var(--text-color-light);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: rgba(0, 112, 74, 0.8);
+}
+
 
 /* Card Styles */
 .permit-options,
@@ -83,15 +145,16 @@ p {
 }
 
 .info-card{
+    display: flex;
+    align-items: center;
     background-color: var(--background-light);
     border: 1px solid var(--border-color);
     padding: 1rem;
     border-radius: 8px;
-    flex: 1 1 calc(33.333% - 1.5rem);
-    min-width: fit-content;
-    max-width: 100%;
+    /* min-width: fit-content; */
+    /* max-width: 100%; */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
+    /* transition: box-shadow 0.3s; */
 }
 
 .permit-card,
@@ -157,38 +220,8 @@ footer {
     padding: 1rem;
 }
 
-.container-fluid {
-    padding: 0;
-  }
   
-  .sidebar {
-    background-color: #f8f9fa;
-    padding: 20px;
-  }
-  
-  .user-info h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .map-section img {
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
-  }
-  
-  .top-nav a {
-    margin-right: 20px;
-    color: #000;
-    font-weight: 500;
-  }
-  
-  .search-bar {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .parking-info-card {
+.info-card {
     display: flex;
     align-items: center;
     background-color: #ffffff;
@@ -197,21 +230,21 @@ footer {
     border-radius: 8px;
   }
   
-  .parking-icon {
+.parking-icon {
     width: 60px;
     height: 60px;
     margin-right: 20px;
   }
   
-  .user-details {
+.user-details {
     font-size: 0.9rem;
   }
   
-  .contact-info {
+.contact-info {
     margin-top: 20px;
   }
   
-  .contact-info h5 {
+.contact-info h5 {
     font-weight: bold;
   }
   
@@ -220,6 +253,10 @@ footer {
     nav {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
     }
 
     .permit-options,
@@ -232,5 +269,10 @@ footer {
     .ticket-card,
     .history-card, .merch-card {
         flex: 1 1 100%;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        gap: 5px;
     }
 }

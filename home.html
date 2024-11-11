@@ -1,4 +1,3 @@
-<!-- home.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,110 +15,84 @@
         <li><a href="permits.html">Permits</a></li>
         <li><a href="tickets.html">Tickets</a></li>
         <li><a href="account_history.html">Account History</a></li>
-        <li><a href="merchandise.html">Merchandise</a></li>
+        <li><a href="merchandise.html">Store</a></li>
         <li><a href="cart.html">Cart</a></li>
       </ul>
     </nav>
   </header>
 
-<main>
-  <!-- <div class="user-dashboard">
-    <aside>
-      <h2>User Name</h2>
-      <p>User ID</p>
-      <img src="campus-map.jpg" alt="Campus Map">
-      <div>
-        <h3>Parking Portal</h3>
-        <p>Access parking info, appeal tickets, and view your history.</p>
-      </div>
-    </aside>
-    <section>
-      <h2>Search</h2>
-      <input type="text" placeholder="Enter details" />
-      <button>Search</button>
-      <div class="parking-info">
-        <h3>Parking Information</h3>
-        <p>License Plate: XYZ-1234</p>
-        <p>Car Details: 2018 Black Honda</p>
-        <p>Outstanding Tickets: 0</p>
-        <button>Edit</button>
-      </div> -->
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Left Sidebar (User Info and Map) -->
+        <div class="col-md-3 sidebar">
+          <div class="user-info">
+            <h3>USER NAME</h3>
+            <p>User ID</p>
+          </div>
+          
+          <div class="map-section">
+            <img src="/images/campus-map.jpeg" alt="Campus Map" class="img-fluid" />
+            <p><a href="#">Instruction Video</a></p>
+            <p><a href="#">Frequently Asked Questions</a></p>
+          </div>
+          
+          <div class="contact-info">
+            <h5>Contact Us</h5>
+            <p>Construction Services</p>
+            <p>Email: example@ggc.edu</p>
+            <p>Phone: (555) 123-4567</p>
+          </div>
+        </div>
+        
+        <!-- Main Content (Search and User Info Card) -->
+        <div class="col-md-9">
+          <!-- Top Navbar Links -->
+          <div class="top-nav">
+            <a href="permits.html">Permits</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="account_history.html">Account History</a>
+            <a href="merchandise.html">Store</a>
+          </div>
 
-<div class="container-fluid">
-  <div class="row">
-    <!-- Left Sidebar (User Info and Map) -->
-    <div class="col-md-3 sidebar">
-      <div class="user-info">
-        <h3>USER NAME</h3>
-        <p>User ID</p>
-      </div>
-      
-      <div class="map-section">
-        <img src="/images/campus-map.jpeg" alt="Campus Map" class="img-fluid" />
-        <p><a href="#">Instruction Video</a></p>
-        <p><a href="#">Frequently Asked Questions</a></p>
-      </div>
-      
-      <div class="contact-info">
-        <h5>Contact Us</h5>
-        <p>Construction Services</p>
-        <p>Email: example@ggc.edu</p>
-        <p>Phone: (555) 123-4567</p>
-      </div>
-    </div>
-    
-    <!-- Main Content (Search and User Info Card) -->
-    <div class="col-md-9">
-      <!-- Top Navbar Links -->
-      <div class="top-nav">
-        <a href="permits.html">Permits</a>
-        <a href="tickets.html">Tickets</a>
-        <a href="account_history.html">Account History</a>
-        <a href="merchandise.html">Store</a>
-      </div>
+          <!-- Search Bar -->
+          <div class="search-bar mt-4">
+            <input type="text" class="form-control" placeholder="Search by license plate" />
+            <button class="btn btn-primary">Search</button>
+          </div>
 
-      <!-- Search Bar -->
-      <div class="search-bar mt-4">
-        <input type="text" class="form-control" placeholder="Search by license plate" />
-        <button class="btn btn-primary">Search</button>
-      </div>
+          <!-- Parking Info Card -->
+          <div class="info-card mt-4">
+            <img src="assets/images/Parking-Portal-logo.png" alt="Parking Icon" class="parking-icon">
+            <div class="user-details">
+              <p>Name: John Doe</p>
+              <p>License Plate: XYZ-1234</p>
+              <p>Car Details: 2018 - Black Honda</p>
+              <p>Permit Type: Gold</p>
+              <p>Outstanding Ticket: $0</p>
+              <button class="btn btn-dark mt-2">Edit</button>
+            </div>
+          </div>
 
-      <!-- Parking Info Card -->
-      <div class="info-card mt-4">
-        <img src="assets/images/Parking-Portal-logo.png" alt="Parking Icon" class="parking-icon">
-        <div class="user-details">
-          <p>Name: John Doe</p>
-          <p>License Plate: XYZ-1234</p>
-          <p>Car Details: 2018 - Black Honda</p>
-          <p>Permit Type: Gold</p>
-          <p>Outstanding Ticket: $0</p>
-          <button class="btn btn-dark mt-2">Edit</button>
+          <!-- Navigation Buttons -->
+          <div class="nav-buttons mt-4 d-flex justify-content-around">
+            <a href="permits.html">
+              <button class="btn btn-dark">Buy Permit</button>
+            </a>
+            <a href="tickets.html">
+              <button class="btn btn-dark">Appeal Ticket</button>
+            </a>
+            <a href="merchandise.html">
+              <button class="btn btn-dark">Shop Store</button>
+            </a>
+          </div>
         </div>
       </div>
-
-      <!-- Navigation Buttons -->
-      <div class="nav-buttons mt-4 d-flex justify-content-around">
-        <a href="permits.html">
-          <button class="btn btn-dark">Buy Permit</button>
-        </a>
-        <a href="tickets.html">
-          <button class="btn btn-dark">Appeal Ticket</button>
-        </a>
-        <a href="merchandise.html">
-          <button class="btn btn-dark">Shop Store</button>
-        </a>
-      </div>
     </div>
-  </div>
-</div>
+  </main>
 
-    </section>
-  </div>
-</main>
-
-<footer>
-  <p>&copy; 2024 GGC Parking Portal. All rights reserved.</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2024 GGC Parking Portal. All rights reserved.</p>
+  </footer>
 </body>
 </html>
