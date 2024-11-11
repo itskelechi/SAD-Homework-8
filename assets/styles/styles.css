@@ -82,7 +82,7 @@ p {
     margin-top: 1rem;
 }
 
-.permit-card,
+.info-card, .permit-card,
 .ticket-card,
 .history-card,
 .merch-card {
@@ -184,11 +184,6 @@ footer {
     font-size: 0.9rem;
   }
   
-  .nav-buttons .btn {
-    width: 30%;
-    padding: 15px;
-    font-size: 1.1rem;
-  }
   
   .contact-info {
     margin-top: 20px;
