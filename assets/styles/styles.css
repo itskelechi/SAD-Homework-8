@@ -107,6 +107,17 @@ p {
     max-width: 50%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s;
+    margin: 14px;
+    height: 300px;
+
+}
+
+.merch-card img {
+    width: 250px;
+    float: left;
+    padding: 10px;
+    height: auto;
+
 }
 
 .permit-card:hover,
