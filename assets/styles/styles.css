@@ -82,7 +82,19 @@ p {
     margin-top: 1rem;
 }
 
-.info-card, .permit-card,
+.info-card{
+    background-color: var(--background-light);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1 1 calc(33.333% - 1.5rem);
+    min-width: 450px;
+    max-width: 900px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.permit-card,
 .ticket-card,
 .history-card,
 .merch-card {
