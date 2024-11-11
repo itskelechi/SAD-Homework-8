@@ -111,7 +111,7 @@ p {
     margin-bottom: 0.5rem;
 }merch-card:hover 
 
-button *{
+button .btn{
     background-color: var(--primary-accent);
     color: var(--text-color-light);
     border: none;
