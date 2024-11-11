@@ -109,9 +109,9 @@ p {
 .history-card h3, .merch-card h3 {
     color: var(--primary-accent);
     margin-bottom: 0.5rem;
-}merch-card:hover 
+}
 
-button .btn{
+button {
     background-color: var(--primary-accent);
     color: var(--text-color-light);
     border: none;
